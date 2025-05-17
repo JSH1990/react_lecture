@@ -13,6 +13,7 @@ let introduceText = `${myName}`;
 
 console.log(introduceText);
 
+// Null Type (아무것도 없다.)
 let empty = null;
 
 let none;

@@ -1,4 +1,5 @@
 //null 병합연산자
+//null 병합연산자
 
 let var1;
 let var2 = 10;
