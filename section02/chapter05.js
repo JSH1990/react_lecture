@@ -1,25 +1,24 @@
-// spread 연산자
-let arr1 = [1, 2, 3];
-let arr2 = [4, ...arr1, 5, 6];
+let arr = [1, 2, 3];
 
-console.log(arr2);
-
-let obj1 = {
-  a: 1,
-  b: 2,
-  c: 3,
-};
-
-let obj2 = {
-  ...obj1,
-  c: 3,
-  c: 4,
-};
-
-console.log(obj2);
-
-function funA(p1, p2, p3) {
-  console.log(p1, p2, p3);
+for (let item of arr) {
+  // console.log(item);
 }
 
-funA(...arr1);
+let person = {
+  name: "정승현",
+  age: 35,
+};
+
+let keys = Object.keys(person);
+
+for (let key of keys) {
+  const value = person[key];
+  console.log(key, value);
+}
+
+let values = Object.values(person);
+console.log(values);
+
+for (let key in person) {
+  console.log(key);
+}
